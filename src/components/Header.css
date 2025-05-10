@@ -1,0 +1,48 @@
+.custom-navbar {
+  backdrop-filter: blur(8px);
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  font-family: monospace;
+  text-transform: uppercase;
+  
+  
+}
+
+.nav-brand {
+  font-weight: bold;
+  color: black;
+}
+
+.nav-link-custom {
+  position: relative;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0d6efd; /* Bootstrap primary color */
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  width: 100%;
+}
+
+/* Scroll effect */
+.custom-navbar.scrolled {
+  background-color: #f8f9fa;
+}
+
+/* Active state styling */
+.nav-link-custom.active {
+  font-weight: bold;
+}

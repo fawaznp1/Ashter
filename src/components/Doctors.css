@@ -1,0 +1,197 @@
+.doctor-directory {
+          font-family: 'Arial', sans-serif;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+        
+        .mobile-filter-btn {
+          display: block;
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 16px;
+          background-color: #2563eb;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        .directory-container {
+          display: flex;
+          gap: 30px;
+        }
+        
+        .sidebar-container {
+          width: 250px;
+          flex-shrink: 0;
+        }
+        
+        .sidebar {
+          background-color: #f8fafc;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+          position: sticky;
+          top: 20px;
+        }
+        
+        .sidebar h3 {
+          margin-top: 0;
+          margin-bottom: 20px;
+          color: #1e293b;
+          font-size: 18px;
+        }
+        
+        .filter-buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        
+        .filter-btn, .clear-btn {
+          padding: 10px 12px;
+          text-align: left;
+          background-color: white;
+          border: 1px solid #e2e8f0;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          font-size: 14px;
+        }
+        
+        .filter-btn:hover, .clear-btn:hover {
+          background-color: #f1f5f9;
+          border-color: #cbd5e1;
+        }
+        
+        .filter-btn.active, .clear-btn.active {
+          background-color: #3b82f6;
+          color: white;
+          border-color: #2563eb;
+        }
+        
+        .doctors-container {
+          flex: 1;
+        }
+        
+        .doctors-container h2 {
+          margin-top: 0;
+          margin-bottom: 24px;
+          color: #1e293b;
+        }
+        
+        .doctors-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 24px;
+        }
+        
+        .doctor-card {
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          padding: 20px;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .doctor-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .doctor-image {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 16px;
+        }
+        
+        .doctor-image img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 3px solid #e2e8f0;
+        }
+        
+        .doctor-status {
+          color: #10b981;
+          font-size: 14px;
+          margin-bottom: 8px;
+          text-align: center;
+        }
+        
+        .doctor-card h4 {
+          margin: 0 0 6px;
+          font-size: 18px;
+          color: #1e293b;
+          text-align: center;
+        }
+        
+        .doctor-card .specialty {
+          color: #64748b;
+          font-size: 14px;
+          margin-bottom: 16px;
+          text-align: center;
+        }
+        
+        .doctor-details {
+          margin-bottom: 16px;
+          border-top: 1px solid #e2e8f0;
+          padding-top: 12px;
+        }
+        
+        .doctor-details p {
+          margin: 8px 0;
+          font-size: 14px;
+          color: #475569;
+        }
+        
+        .book-btn {
+          background-color: #3b82f6;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          padding: 10px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+          margin-top: auto;
+          transition: background-color 0.2s ease;
+        }
+        
+        .book-btn:hover {
+          background-color: #2563eb;
+        }
+        
+        .no-results {
+          grid-column: 1 / -1;
+          text-align: center;
+          padding: 40px;
+          color: #64748b;
+          background-color: #f8fafc;
+          border-radius: 8px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+          .directory-container {
+            flex-direction: column;
+          }
+          
+          .sidebar-container {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          
+          .sidebar-container.closed {
+            display: none;
+          }
+          
+          .sidebar {
+            position: static;
+          }
+        }

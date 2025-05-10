@@ -1,0 +1,378 @@
+/* Main Container */
+.doctor-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Doctor Profile Section */
+.doctor-profile {
+  display: flex;
+  gap: 24px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.doctor-image-container {
+  flex-shrink: 0;
+}
+
+.doctor-image {
+  width: 240px;
+  height: 288px;
+  object-fit: cover;
+  border-radius: 16px;
+  background-color: #1e5dff;
+  padding: 8px;
+}
+
+.doctor-info {
+  flex: 1;
+}
+
+.doctor-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px 0;
+}
+
+.verified-badge {
+  color: #1e5dff;
+  font-size: 1.25rem;
+  background-color: rgba(30, 93, 255, 0.1);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-credentials {
+  color: #666;
+  margin: 4px 0 8px 0;
+}
+
+.doctor-experience {
+  margin: 8px 0;
+}
+
+.experience-badge {
+  background-color: #f3f4f6;
+  font-size: 0.875rem;
+  color: #4b5563;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.doctor-about {
+  margin-top: 16px;
+}
+
+.about-title {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-icon {
+  color: #1e5dff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.about-content {
+  color: #666;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.appointment-fee {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.fee-amount {
+  color: #000;
+  font-weight: 700;
+}
+
+/* Booking Section */
+.booking-section {
+  margin-top: 40px;
+}
+
+.booking-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.days-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.day-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day-item.selected {
+  background-color: #1e5dff;
+  color: white;
+  border-color: #1e5dff;
+}
+
+.day-name {
+  font-weight: 700;
+}
+
+.day-date {
+  font-size: 0.875rem;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.time-slot-btn {
+  padding: 8px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  background-color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-slot-btn:hover {
+  background-color: #e6f0ff;
+  border-color: #1e5dff;
+}
+
+/* Related Doctors Section */
+.related-doctors-section {
+  margin-top: 60px;
+}
+
+.related-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.related-doctors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.related-doctor-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.related-doctor-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #f3f4f6;
+}
+
+.related-doctor-info {
+  padding: 16px;
+}
+
+.related-doctor-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.related-doctor-specialty {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 8px 0;
+}
+
+.related-doctor-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.875rem;
+  margin: 8px 0;
+}
+
+.star-icon {
+  color: #facc15;
+}
+
+.book-now-btn {
+  background-color: #1e5dff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.book-now-btn:hover {
+  background-color: #1549ce;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .related-doctors-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doctor-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .doctor-image {
+    width: 200px;
+    height: 240px;
+  }
+  
+  .doctor-name {
+    justify-content: center;
+  }
+  
+  .doctor-about {
+    text-align: left;
+  }
+  
+  .about-title {
+    justify-content: center;
+  }
+  
+  .days-container {
+    justify-content: center;
+  }
+  
+  .time-slots {
+    justify-content: center;
+  }
+  
+  .related-doctors-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .doctor-details-container {
+    padding: 12px;
+  }
+  
+  .doctor-profile {
+    padding: 16px;
+  }
+  
+  .doctor-image {
+    width: 160px;
+    height: 200px;
+  }
+  
+  .days-container {
+    gap: 8px;
+  }
+  
+  .day-item {
+    width: 56px;
+    height: 70px;
+  }
+  
+  .time-slot-btn {
+    padding: 6px 12px;
+  }
+  
+  .related-doctors-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.doctor-profile,
+.booking-section,
+.related-doctors-section {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.related-doctor-card {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: calc(0.1s * var(--i, 0));
+}
+
+/* Scrollbar Styling */
+.days-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.days-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.days-container::-webkit-scrollbar-thumb {
+  background: #c5c7ca;
+  border-radius: 10px;
+}
+
+.days-container::-webkit-scrollbar-thumb:hover {
+  background: #a8abb0;
+}
