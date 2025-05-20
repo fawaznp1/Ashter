@@ -234,6 +234,14 @@ export default function LoginComponent() {
     setErrors({});
   };
 
+  // Handler for keyboard events to prevent form submission on Enter key for non-submit buttons
+  const handleKeyDown = (e) => {
+    // Prevent Enter key from submitting the form when focused on specific elements
+    if (e.key === 'Enter' && (e.target.classList.contains('link') || e.target.classList.contains('link-button'))) {
+      e.preventDefault(); // Prevent form submission
+    }
+  };
+
   const backToLogin = () => {
     setShowForgotPassword(false);
     setErrors({});
@@ -311,8 +319,7 @@ export default function LoginComponent() {
 
           <div className="form-group">
             <button
-              type="button"
-              onClick={handleSendResetCode}
+              type="submit"
               disabled={isSubmitting}
               className="submit-button"
             >
@@ -352,8 +359,7 @@ export default function LoginComponent() {
 
           <div className="form-group">
             <button
-              type="button"
-              onClick={handleVerifyCode}
+              type="submit"
               disabled={isSubmitting}
               className="submit-button"
             >
@@ -438,8 +444,7 @@ export default function LoginComponent() {
 
           <div className="form-group">
             <button
-              type="button"
-              onClick={handleResetPassword}
+              type="submit"
               disabled={isSubmitting}
               className="submit-button"
             >
@@ -484,7 +489,7 @@ export default function LoginComponent() {
           </div>
         </div>
 
-        <div className="login-form-container">
+        <div className="login-form-container" onKeyDown={handleKeyDown}>
           {!showForgotPassword ? (
             <>
               {loginSuccess && (
@@ -496,7 +501,7 @@ export default function LoginComponent() {
                 </div>
               )}
 
-              <div className="login-form">
+              <form className="login-form" onSubmit={handleSubmit}>
                 {!isLogin && (
                   <div className="form-group">
                     <label htmlFor="name" className="form-label" autoComplete="name">Full Name</label>
@@ -562,18 +567,24 @@ export default function LoginComponent() {
                   <div className="form-row">
                     <div className="checkbox-container">
                       <input id="remember-me" name="remember-me" type="checkbox" className="checkbox-input" />
-                       <label htmlFor="remember-me" className="checkbox-label">Remember me</label>
+                      <label htmlFor="remember-me" className="checkbox-label">Remember me</label>
                     </div>
                     <div className="forgot-password">
-                      <button onClick={handleForgotPassword} className="link">Forgot password?</button>
+                      <button 
+                        type="button" 
+                        onClick={handleForgotPassword} 
+                        className="link"
+                        tabIndex="-1" // Prevents tab focus and unintended Enter submission
+                      >
+                        Forgot password?
+                      </button>
                     </div>
                   </div>
                 )}
 
                 <div className="form-group">
                   <button
-                    type="button"
-                    onClick={handleSubmit}
+                    type="submit"
                     disabled={isSubmitting}
                     className="submit-button"
                   >
@@ -584,7 +595,7 @@ export default function LoginComponent() {
                     ) : isLogin ? "Sign in" : "Create account"}
                   </button>
                 </div>
-              </div>
+              </form>
 
              
               <div className="toggle-view">
@@ -598,9 +609,18 @@ export default function LoginComponent() {
             </>
           ) : (
             <>
-              <div className="login-form">
+              <form className="login-form" onSubmit={(e) => {
+                e.preventDefault();
+                if (resetStep === 1) {
+                  handleSendResetCode();
+                } else if (resetStep === 2) {
+                  handleVerifyCode();
+                } else if (resetStep === 3) {
+                  handleResetPassword();
+                }
+              }}>
                 {renderForgotPasswordForm()}
-              </div>
+              </form>
               
               {!resetSuccess && (
                 <div className="toggle-view">
