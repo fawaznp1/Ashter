@@ -496,7 +496,7 @@ export default function LoginComponent() {
                 <div className="success-message">
                   <CheckIcon />
                   <span>
-                    {isLogin ? "Login successful!" : "Account created successfully!"}
+                    {isLogin ? " Account Created Successfully! Now Login" : "Login successful!"}
                   </span>
                 </div>
               )}
