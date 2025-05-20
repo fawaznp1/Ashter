@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Speciality.css';
 
 const specialities = [
@@ -15,7 +16,7 @@ const specialities = [
     image: 'https://cdn-icons-png.flaticon.com/512/3774/3774306.png',
   },
   {
-    name: 'Pediatricians',
+    name: 'Pediatrician',
     image: 'https://cdn-icons-png.flaticon.com/512/3774/3774309.png',
   },
   {
@@ -29,10 +30,19 @@ const specialities = [
 ];
 
 const SpecialitySection = () => {
+  const navigate = useNavigate();
+
   const handleClick = (speciality) => {
-    alert(`You clicked on ${speciality}`);
-    // You can navigate or filter here instead of alert
-  };
+  // Capitalize first letter of each word
+  const formattedSpeciality = speciality
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
+  navigate(`/alldoctors?specialty=${encodeURIComponent(formattedSpeciality)}`);
+};
+
 
   return (
     <section className="speciality-section">

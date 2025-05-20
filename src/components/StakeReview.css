@@ -1,0 +1,288 @@
+/* StakeholderReviews.css */
+
+/* Container Styles */
+.stakeholder-reviews {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Header Styles */
+.reviews-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reviews-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+
+.reviews-description {
+  font-size: 1.125rem;
+  color: #4b5563;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Rating Overview */
+.ratings-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.stars-display {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #f59e0b;
+  margin-right: 0.5rem;
+}
+
+.rating-number {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.rating-count {
+  color: #6b7280;
+  margin-left: 0.5rem;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-tab {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-tab.active {
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.filter-tab:not(.active) {
+  background-color: white;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+.filter-tab:not(.active):hover {
+  background-color: #f3f4f6;
+}
+
+/* Reviews Grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Review Card */
+.review-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.review-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.review-card.fade-out {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+.review-content {
+  padding: 1.5rem;
+}
+
+.reviewer-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.reviewer-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 2px solid #dbeafe;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.reviewer-info h3 {
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.reviewer-meta {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.reviewer-role {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.review-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-left: 0.5rem;
+}
+
+.review-stars {
+  display: flex;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.star {
+  color: #d1d5db;
+}
+
+.star.filled {
+  color: #f59e0b;
+}
+
+.review-text {
+  margin-top: 1rem;
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+
+.review-indicator {
+  height: 0.25rem;
+  width: 100%;
+}
+
+.review-indicator.five-star {
+  background-color: #3b82f6;
+}
+
+.review-indicator.four-star {
+  background-color: #60a5fa;
+}
+
+/* Load More Button */
+.load-more-container {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.load-more-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-0.25rem);
+}
+
+.load-more-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Stats Section */
+.stats-section {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .stats-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.stat-label {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeIn 0.5s ease forwards;
+}

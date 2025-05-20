@@ -1,0 +1,155 @@
+.patient-reviews-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.reviews-title {
+  color: #2c3e50;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.reviews-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+.reviews-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.review-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.reviewer-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3498db;
+}
+
+.reviewer-info {
+  margin-left: 1rem;
+}
+
+.reviewer-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.rating {
+  display: flex;
+  margin: 0.3rem 0;
+}
+
+.star {
+  color: #d4d4d4;
+  font-size: 1.2rem;
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #f1c40f;
+}
+
+.review-date {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
+
+.review-text {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.more-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.more-button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .reviews-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-reviews-container {
+    padding: 1rem;
+  }
+
+  .reviews-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    padding: 1rem;
+  }
+  
+  .reviewer-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .reviewer-name {
+    font-size: 1rem;
+  }
+  
+  .more-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

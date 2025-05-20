@@ -1,0 +1,190 @@
+.doctor-reviews-container {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(145deg, #ffffff, #f0f4f8);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.doctors-title {
+  color: #1e3a8a;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.doctors-title::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+  border-radius: 2px;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.doctor-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #bfdbfe;
+}
+
+.doctor-profile {
+  display: flex;
+  padding: 1.5rem;
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.doctor-image-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #3b82f6;
+  background-color: white;
+  flex-shrink: 0;
+}
+
+.doctor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor-details {
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctor-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 0.3rem 0;
+}
+
+.doctor-specialty {
+  font-size: 0.95rem;
+  color: #3b82f6;
+  font-weight: 600;
+  margin: 0 0 0.3rem 0;
+}
+
+.doctor-years {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+}
+
+.doctor-review {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.doctor-review p {
+  color: #334155;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.view-more-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.25);
+}
+
+.view-more-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 8px 15px rgba(59, 130, 246, 0.35);
+}
+
+@media (max-width: 992px) {
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .doctor-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-reviews-container {
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+  
+  .doctors-title {
+    font-size: 1.8rem;
+  }
+  
+  .doctor-profile {
+    padding: 1.25rem;
+  }
+  
+  .doctor-review {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .doctor-details {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .view-more-btn {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}

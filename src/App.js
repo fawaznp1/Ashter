@@ -1,24 +1,41 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import React ,{useEffect} from 'react';
 import './App.css';
 import Home from './components/Home';
 import BasicExample from './components/Header';
 import ComponentName from './components/Footer';
-import DoctorDirectory from './components/Doctors';
 import About from './components/About';
 import Contact from './components/Contact';
-import DoctorDetailsPage from './components/DocDetail';
+import DoctorDetails from './components/DoctorDetails';
+import TopDoctors from './components/TopDoctors';
+import AllDoctors from './components/AllDoctors';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
+
+  
   return (
     
     <div className="App">
+      <ScrollToTop />
       <BasicExample />
      <Routes>
+      
       <Route path='/' element={<Home />}></Route>
-      <Route path='/doctors' element={<DoctorDirectory />}></Route>
       <Route path='/about' element={<About />} >  </Route>
       <Route path='/contact' element={<Contact />} >  </Route>
-      <Route path='/doctordetails' element={<DoctorDetailsPage />} >  </Route>
+      <Route path='/topd' element={<TopDoctors />} ></Route>
+      <Route path="/doctor/:id" element={<DoctorDetails />} /> 
+      <Route path='/alldoctors' element={<AllDoctors />}></Route>
 
      </Routes>
      <ComponentName />

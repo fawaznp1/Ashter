@@ -1,10 +1,14 @@
 import React from 'react';
 import './Home.css';
 import SpecialitySection from './Speciality';
-import TopDoctors from './AllDoc';
-import DoctorDetails from './DocDetail';
-import dr1 from '../images/dr1.webp';
-import dr2 from '../images/dr4.webp'
+import dr3 from '../images/dr26 (1).webp';
+import dr2 from '../images/dr4.webp';
+import dr4 from '../images/dr26 (14).webp'
+
+import TopDoctors from './TopDoctors';
+import PatientReviews from './PatientReview';
+import DoctorReviews from './DoctorReview';
+import StakeReview from './StakeReview';
 
 const Home = () => {
   return (
@@ -24,11 +28,16 @@ const Home = () => {
             Simply browse through our extensive list of trusted doctors,<br />
             schedule your appointment hassle-free.
           </p>
-          <button className="hero-button">Book appointment →</button>
+        <button
+            className="hero-button"
+            onClick={() => { document.getElementById('topd')?.scrollIntoView({ behavior: 'smooth' });}}>
+              Book appointment →
+        </button>
+          
         </div>
         <div className="hero-right">
           <img
-            src={dr2}
+            src={dr4}
             alt="Doctor"
             className="doctor-image"
           />
@@ -36,8 +45,15 @@ const Home = () => {
       </section>
       
       <SpecialitySection />
-      <TopDoctors />
+  <div id='topd'>
+        <TopDoctors />
 
+        <PatientReviews />
+
+        <DoctorReviews />
+
+        <StakeReview />
+  </div>
       <section className="hero mb-5">
         <div className="hero-left">
           <h1>
@@ -49,7 +65,7 @@ const Home = () => {
         </div>
         <div className="hero-right">
           <img
-            src={dr2}
+            src={dr3}
             alt="Doctor"
             className="doctor-image"
           />

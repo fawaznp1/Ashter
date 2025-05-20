@@ -34,9 +34,9 @@ const Footer = () => {
           <h3 className="footer-heading">Company</h3>
           <ul>
             <li>About</li>
-            <li>Features</li>
+            <li>Features</li> 
             <li>Works</li>
-            <li>Career</li>
+            <li >Career</li>
           </ul>
         </div>
 

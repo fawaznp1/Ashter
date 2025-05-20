@@ -1,0 +1,358 @@
+/* DoctorDetails.css */
+
+/* Global styles for the doctor details page */
+.doctor-details-page {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+  background-color: #f7f9fc;
+  padding: 30px 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  color: #536475;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #3566E3;
+}
+
+.back-arrow {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Doctor not found page */
+.doctor-not-found {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-not-found h2 {
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.doctor-not-found .back-btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 20px;
+  background-color: #3566E3;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.doctor-not-found .back-btn:hover {
+  background-color: #2a50b3;
+}
+
+/* Doctor profile main container */
+.doctor-profile {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Profile header section */
+.profile-header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 30px;
+  background-color: #f8fafd;
+  border-bottom: 1px solid #eaeef5;
+}
+
+
+.profile-image {
+  width: 280px;
+  height: 65%; 
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border: 4px solid white;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.profile-info {
+  margin-left: 0; /* Remove side margin */
+  margin-top: 20px; /* Add spacing below image */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center text below image */
+  text-align: center;
+}
+
+
+/* Status indicator */
+.status {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4CAF50;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Doctor name and specialization */
+.profile-info h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #1a365d;
+}
+
+.specialty {
+  font-size: 16px;
+  color: #5a6c87;
+  margin: 0 0 16px 0;
+}
+
+/* Rating system */
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  color: #FFB400;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-right: 8px;
+}
+
+.rating-value {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.reviews {
+  color: #718096;
+  font-size: 14px;
+}
+
+/* Profile details section */
+.profile-details {
+  padding: 30px;
+}
+
+.detail-section {
+  margin-bottom: 30px;
+}
+
+.detail-section h2 {
+  color: #2d3748;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.detail-section p {
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+/* Detail grid layout */
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.detail-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.detail-item p {
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+/* Appointment section */
+.appointment-section {
+  background-color: #f8fafd;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.appointment-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.fee {
+  font-weight: 600;
+  color: #3566E3;
+  font-size: 18px;
+}
+
+.availability {
+  margin-bottom: 24px;
+}
+
+.availability h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.availability p {
+  color: #4a5568;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Date and Time selectors */
+.date-selector, .time-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.date-btn, .time-btn {
+  padding: 10px 16px;
+  background-color: white;
+  color: #3566E3;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.date-btn:hover, .time-btn:hover {
+  background-color: #edf2f7;
+}
+
+.date-btn.selected, .time-btn.selected {
+  background-color: #3566E3;
+  color: white;
+  border-color: #3566E3;
+}
+
+/* Utility classes */
+.mt-4 {
+  margin-top: 24px;
+}
+
+/* Book appointment button */
+.book-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #3566E3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 20px;
+}
+
+.book-btn:hover {
+  background-color: #2a50b3;
+}
+
+.book-btn.disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-info {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .date-selector, .time-selector {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 180px;
+    height: 240px;
+  }
+  
+  .profile-info h1 {
+    font-size: 24px;
+  }
+  
+  .appointment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .fee {
+    margin-top: 8px;
+  }
+  
+  .date-btn, .time-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
