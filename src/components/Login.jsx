@@ -185,7 +185,7 @@ export default function LoginComponent() {
       setIsSubmitting(false);
       // In a real application, you would send an email with this code
       console.log(`Reset code for ${resetEmail}: ${code}`);
-      alert(`For demo purposes, your reset code is: ${code}`);
+      alert(`your reset code is: ${code}`);
     }, 1000);
   };
 

@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-section">
           <div className="footer-logo">
             <div className="logo-box yellow"></div>
-            <div className="logo-box blue"></div>
+            <div className="logo-box blue"></div> 
             <h1 className="logo-text">Ashter</h1>
           </div>
           <p className="footer-description">

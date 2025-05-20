@@ -12,24 +12,15 @@ const Contact = () => {
       <div className="about-content">
         <div className="about-image">
           <img
-            src={dr19}
+            src={dr20}
             alt="Doctors"
+            loading='lazy'
           />
         </div>
 
         <div className="about-text">
             <h4>OUR OFFICE</h4>
-         {/*  <p>
-            00000 Willms Station <br />
-            Suite 000, Washington, USA
-
-          </p>
-          <p>
-           
-            Tel: (000) 000-0000 <br />
-            Email: info@Ashter.com
-          </p> */}
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198740.92451084367!2d-77.17973160377316!3d38.89363817760632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sin!4v1747732231442!5m2!1sen!2sin" width="450" height="300" /* style="border:0;" */ allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt='Google maps '></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198740.92451084367!2d-77.17973160377316!3d38.89363817760632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sin!4v1747732231442!5m2!1sen!2sin" width="450" height="300" style={{maxWidth:"350px"}} /* style="border:0;" */ allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt='Google maps '></iframe>
           <h4>CAREERS AT ASHTER</h4>
           <p>
             Learn more about our teams and job openings.

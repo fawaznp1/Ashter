@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 3.5rem;
   background-color: #616eff;
   border-radius: 16px;
   color: white;
@@ -129,6 +129,7 @@
   .hero {
     padding: 30px 15px;
     margin: auto;
+    margin-top: 1rem;
   }
 
   .hero-left h1, 
@@ -141,6 +142,8 @@
   }
   
   .doctor-image {
-    width: 100%;
+    margin-top: .5rem;
+    width: 80%;
+    max-width: 80%;
   }
 }

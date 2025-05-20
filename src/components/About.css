@@ -1,5 +1,5 @@
 .about-container {
-  padding: 60px 20px;
+  padding: 30px 20px;
   max-width: 1200px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: space-between;
 }
@@ -48,16 +48,16 @@
 
 .about-text p {
   margin-bottom: 18px;
-  line-height: 1.7;
   color: #333;
   font-size: 16px;
 }
 
 .about-text h4 {
-  margin: 25px 0 15px;
+  margin: 2px 0 5px;
   font-weight: bold;
   color: #101a30;
   font-size: 20px;
+  margin-top: 1rem;
 }
 
 

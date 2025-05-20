@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 import './TopDoctors.css';
 import { doctorsData } from './DoctorData';
 
-// Import your doctor image
-import dr2 from '../images/dr2.webp';
-
 const TopDoctors = () => {
   // Create doctors array with image included
   const doctors = doctorsData.map(doc => ({
     ...doc,
-    /* image: dr2 */
   }));
   
   // Only take the first 8 doctors to display
@@ -27,7 +23,7 @@ const TopDoctors = () => {
           <Link 
             to={`/doctor/${doctor.id}`}
             key={doctor.id}
-            className="doctor-card-link"
+            className="doctor-card-link" 
           >
             <div className="doctor-card">
               <div className='image-container'>

@@ -14,6 +14,7 @@ const About = () => {
           <img
             src={dr19}
             alt="Doctors"
+            loading='lazy'
           />
         </div>
         

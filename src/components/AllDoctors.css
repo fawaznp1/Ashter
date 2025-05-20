@@ -104,7 +104,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .image-container {
-  width: 150px;          /* Fixed width */
+  width: 150px;          /* Fixed width */ 
   height: 250px;         /* Fixed height */
   display: flex;
   align-items: center;

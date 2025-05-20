@@ -282,6 +282,7 @@ const StakeholderReviews = () => {
                   src={review.avatar}
                   alt={review.name}
                   className="reviewer-avatar"
+                  loading='lazy'
                 />
                 <div className="reviewer-info">
                   <h3>{review.name}</h3>

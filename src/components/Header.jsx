@@ -102,9 +102,9 @@ function EnhancedNavbar() {
           <div className="auth-buttons">
             {loggedInUser ? (
               <div className="user-info">
-                <span className="user-name">Hi, {loggedInUser.name}</span>
+                <span className="user-name">{loggedInUser.name}</span>
                  <Nav>
-            <Nav.Link href='/dashboard' className={`dashbutton nav-link-custom ${activeLink === '/dashboard' ? 'active' : ''}`}
+            <Nav.Link href='/dashboard' className={`dashbutton  ${activeLink === '/dashboard' ? 'active' : ''}`}
               onClick={() => handleNavClick('/dashboard')}  >
               Dashboard
             </Nav.Link>

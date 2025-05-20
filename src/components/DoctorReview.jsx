@@ -25,7 +25,7 @@ const DoctorReviews = () => {
       specialty: "Neurology",
       years: 12,
       review: "The administrative support at Ashter Hospital is unmatched. They handle the logistics seamlessly, allowing me to focus entirely on patient care and complex neurological cases.",
-      image: dr11
+      image: dr20
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const DoctorReviews = () => {
       specialty: "Pediatrics",
       years: 8,
       review: "Working in pediatrics at Ashter Hospital has been incredibly rewarding. The child-friendly facilities and specialized support staff create an ideal environment for our young patients.",
-      image: dr10
+      image: dr19
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const DoctorReviews = () => {
       specialty: "Orthopedic Surgery",
       years: 20,
       review: "The operating rooms at Ashter are equipped with cutting-edge technology that enhances surgical precision. The post-operative care team is equally impressive in ensuring patient recovery.",
-      image: dr20
+      image: dr11
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ const DoctorReviews = () => {
       specialty: "Obstetrics & Gynecology",
       years: 14,
       review: "The maternity ward at Ashter Hospital is designed with both mother and baby in mind. As an OB/GYN, I appreciate the thoughtful layout and excellent nursing staff.",
-      image: dr19
+      image: dr10
     },
     {
       id: 6,
@@ -60,7 +60,7 @@ const DoctorReviews = () => {
       image: dr20
     },
     {
-      id: 7,
+      id: 7, 
       name: "Dr. Grace Thompson",
       specialty: "Oncology",
       years: 18,
@@ -183,7 +183,7 @@ const DoctorReviews = () => {
           <div key={doctor.id} className="doctor-card">
             <div className="doctor-profile">
               <div className="doctor-image-container">
-                <img src={doctor.image} alt={doctor.name} className="doctor-image" />
+                <img src={doctor.image} alt={doctor.name} className="doctor-image" loading='lazy' />
               </div>
               <div className="doctor-details">
                 <h3 className="doctor-name">{doctor.name}</h3>

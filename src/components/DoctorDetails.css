@@ -1,6 +1,3 @@
-/* DoctorDetails.css */
-
-/* Global styles for the doctor details page */
 .doctor-details-page {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #333;
@@ -94,8 +91,8 @@
 
 .profile-image img {
   width: 100%;
-  height: 90%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 .profile-info {
@@ -270,9 +267,9 @@
   cursor: pointer;
   transition: all 0.2s;
 }
-
+ 
 .date-btn:hover, .time-btn:hover {
-  background-color: #edf2f7;
+  background-color: #edf2f7;  
 }
 
 .date-btn.selected, .time-btn.selected {
@@ -333,8 +330,8 @@
 
 @media (max-width: 480px) {
   .profile-image {
-    width: 180px; 
-    height: 250px;
+    width: 220px; 
+    height: 300px;
   }
   
   .profile-info h1 {
@@ -351,7 +348,7 @@
   }
   
   .date-btn, .time-btn {
-/*     padding: 8px 12px;
- */    font-size: 10px;
+   padding: 8px 6px;
+    font-size: 10px;
   }
 }

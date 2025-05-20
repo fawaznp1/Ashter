@@ -88,7 +88,7 @@ export const doctorsData = [
     rating: 4.9,
     reviews: 215,
     location: 'Children\'s Medical Center, Floor 2, Room 220'
-    ,image: dr1
+    ,image: dr19
   },
   {
     id: 5,
@@ -313,7 +313,7 @@ export const doctorsData = [
     languages: ['English'],
     rating: 4.8,
     reviews: 124,
-    location: 'Digestive Health Center, Floor 2, Room 230',image: dr19
+    location: 'Digestive Health Center, Floor 2, Room 230',image: dr1
   },
   {
     id: 20,

@@ -88,7 +88,7 @@ const AllDoctors = () => {
           <p>
             Simply browse through our extensive list of trusted doctors.
             {selectedCategory !== 'all' && (
-              <span className="filter-indicator">
+              <span className="filter-indicator"> 
                 {' '} <br />
                 Filtered by: <strong>{selectedCategory}</strong>
               </span>

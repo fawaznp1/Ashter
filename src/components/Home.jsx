@@ -12,7 +12,7 @@ import DoctorReviews from './DoctorReview';
 import StakeReview from './StakeReview';
 
 const Home = () => {
-  return (
+  return ( 
     <>
       <section className="hero">
         <div className="hero-left">
@@ -70,6 +70,7 @@ const Home = () => {
             src={dr3}
             alt="Doctor"
             className="doctor-image"
+            loading='lazy'
           />
         </div>
       </section>

@@ -184,7 +184,7 @@ const DoctorDetails = () => {
               </div>
 
               <div className="availability">
-                <h3>General Availability</h3>
+                <h3>General Availability</h3> 
                 <p>{doctor.availability}</p>
  
                 <h3 className="mt-4">Choose a Date</h3>
@@ -197,7 +197,7 @@ const DoctorDetails = () => {
                     >
                       {date.formatted}
                     </button>
-                  ))}
+                  ))} 
                 </div>
 
                 {selectedDate && (

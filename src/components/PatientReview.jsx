@@ -188,7 +188,7 @@ const PatientReviews = () => {
         {displayedReviews.map((review) => (
           <div key={review.id} className="review-card">
             <div className="review-header">
-              <img className="reviewer-image" src={review.image} alt={`${review.name}`} />
+              <img className="reviewer-image" src={review.image} alt={`${review.name}`} loading='lazy' />
               <div className="reviewer-info">
                 <h3 className="reviewer-name">{review.name}</h3>
                 <div className="rating">

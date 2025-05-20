@@ -177,10 +177,28 @@
     align-items: center;
     text-align: center;
   }
-  
+
+  .doctor-image-container {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #3b82f6;
+    background-color: white;
+    flex-shrink: 0;
+  }
+
+  .doctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+/*     display: block;
+ */  }
+
+
   .doctor-details {
     margin-left: 0;
-    margin-top: 1rem;
+    margin-top: 1rem; 
   }
   
   .view-more-btn {
