@@ -1,23 +1,24 @@
 import dr1 from '../images/dr1.webp'
-import dr2 from '../images/dr2.webp'
-import dr3 from '../images/dr26 (7).webp'
-import dr4 from '../images/dr4.webp'
+import dr2 from '../images/dr45 (1).webp'
+import dr3 from '../images/dr45 (2).webp'
+import dr4 from '../images/dr45 (3).webp'
 import dr5 from '../images/dr5.webp'
-import dr6 from '../images/dr30.png'
-import dr7 from '../images/dr32.png'
-import dr8 from '../images/dr20.jpg'
+import dr6 from '../images/dr45 (4).webp'
+import dr7 from '../images/dr45 (5).webp'
+import dr8 from '../images/dr45 (6).webp'
 import dr9 from '../images/dr26 (1).webp'
-import dr10 from '../images/dr26 (10).webp'
-import dr11 from '../images/dr26 (11).webp'
-import dr12 from '../images/dr26 (12).webp'
+import dr10 from '../images/dr45 (7).webp'
+import dr11 from '../images/dr45 (8).webp'
+import dr12 from '../images/dr45 (9).webp'
 import dr13 from '../images/dr26 (13).webp'
 import dr14 from '../images/dr26 (14).webp'
 import dr15 from '../images/dr26 (15).webp'
 import dr16 from '../images/dr26 (16).webp'
 import dr17 from '../images/dr26 (17).webp'
-import dr18 from '../images/dr26 (4).webp'
-import dr19 from '../images/dr26 (5).webp'
-import dr20 from '../images/dr4.webp'
+import dr18 from '../images/dr45 (10).webp'
+import dr19 from '../images/dr45 (11).webp'
+import dr20 from '../images/dr45 (12).webp'
+import dr21 from '../images/dr45 (13).webp'
 
 
 
@@ -102,7 +103,7 @@ export const doctorsData = [
     languages: ['English', 'Urdu', 'Arabic'],
     rating: 4.8,
     reviews: 87,
-    location: 'Heart Institute, Floor 4, Suite 405',image: dr5
+    location: 'Heart Institute, Floor 4, Suite 405',image: dr10
   },
   {
     id: 6,
@@ -177,7 +178,7 @@ export const doctorsData = [
     languages: ['English', 'Arabic'],
     rating: 4.7,
     reviews: 112,
-    location: 'Urology Clinic, Floor 3, Suite 305',image: dr10
+    location: 'Urology Clinic, Floor 3, Suite 305',image: dr5
   },
   {
     id: 11,
@@ -192,7 +193,7 @@ export const doctorsData = [
     languages: ['English', 'Russian'],
     rating: 4.9,
     reviews: 143,
-    location: 'Cancer Treatment Center, Floor 4, Suite 420',image: dr11
+    location: 'Cancer Treatment Center, Floor 4, Suite 420',image: dr15
   },
   {
     id: 12,
@@ -252,7 +253,7 @@ export const doctorsData = [
     languages: ['English', 'Portuguese', 'Spanish'],
     rating: 4.9,
     reviews: 138,
-    location: 'Vision Center, Floor 2, Suite 240',image: dr15
+    location: 'Vision Center, Floor 2, Suite 240',image: dr11
   },
   {
     id: 16,
@@ -267,7 +268,7 @@ export const doctorsData = [
     languages: ['English', 'Hindi'],
     rating: 4.8,
     reviews: 76,
-    location: 'Rheumatology Clinic, Floor 3, Room 330',image: dr16
+    location: 'Rheumatology Clinic, Floor 3, Room 330',image: dr17
   },
   {
     id: 17,
@@ -282,7 +283,7 @@ export const doctorsData = [
     languages: ['English'],
     rating: 4.9,
     reviews: 157,
-    location: 'Plastic Surgery Center, Floor 4, Suite 415',image: dr17
+    location: 'Plastic Surgery Center, Floor 4, Suite 415',image: dr16
   },
   {
     id: 18,
@@ -316,18 +317,34 @@ export const doctorsData = [
   },
   {
     id: 20,
-    name: 'Dr. Maxwest James',
+    name: 'Dr. Christina James',
     specialty: 'General Physician',
     status: 'Available',
     availability: 'Mon-Fri: 9AM-5PM, Sat: 10AM-2PM',
     appointmentFee: '$120',
     experience: '11 years',
     education: 'MBBS  from Johns Hopkins University',
-    description: 'Dr. Richard James is a board-certified general physician with over 15 years of experience. He specializes in preventative care and chronic disease management. Dr. James takes a holistic approach to healthcare, focusing on both physical and mental wellbeing.',
-    languages: ['English', 'Spanish'],
+    description: 'Dr. Christina James is a board-certified general physician with over 15 years of experience. He specializes in preventative care and chronic disease management. Dr. Christina takes a holistic approach to healthcare, focusing on both physical and mental wellbeing.',
+    languages: ['English', 'Spanish' ,'Korea'],
     rating: 4.8,
     reviews: 96,
     location: 'Medical Center, Floor 3, Room 302-B',
     image: dr20
+  },
+  {
+    id: 21,
+    name: 'Dr. Susan John',
+    specialty: 'General Physician',
+    status: 'Available',
+    availability: 'Mon-Fri: 9AM-5PM, Sat: 10AM-2PM',
+    appointmentFee: '$120',
+    experience: '11 years',
+    education: 'MBBS  from Johns Hopkins University',
+    description: 'Dr. Susan John is a board-certified general physician with over 15 years of experience. He specializes in preventative care and chronic disease management. Dr. Susan takes a holistic approach to healthcare, focusing on both physical and mental wellbeing.',
+    languages: ['English', 'Spanish' ,'German'],
+    rating: 4.8,
+    reviews: 96,
+    location: 'Medical Center, Floor 3, Room 302-B',
+    image: dr21
   },
 ];
