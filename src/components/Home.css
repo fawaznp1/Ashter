@@ -144,6 +144,7 @@
   .doctor-image {
     margin-top: .5rem;
     width: 80%;
-    max-width: 80%;
+    max-width: 70%;
+    max-height: 100vh;
   }
 }
