@@ -211,7 +211,7 @@
 .appointment-section {
   background-color: #f8fafd;
   border-radius: 8px;
-  padding: 24px;
+  padding: 12px;
 }
 
 .appointment-header {
@@ -223,7 +223,7 @@
 
 .appointment-header h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #2d3748;
 }
@@ -276,7 +276,7 @@
 }
 
 .date-btn.selected, .time-btn.selected {
-  background-color: #3566E3;
+  background-color: #3566E3 ;
   color: white;
   border-color: #3566E3;
 }
@@ -286,7 +286,6 @@
   margin-top: 24px;
 }
 
-/* Book appointment button */
 .book-btn {
   width: 100%;
   padding: 14px;
@@ -334,8 +333,8 @@
 
 @media (max-width: 480px) {
   .profile-image {
-    width: 180px;
-    height: 240px;
+    width: 180px; 
+    height: 250px;
   }
   
   .profile-info h1 {
@@ -352,7 +351,7 @@
   }
   
   .date-btn, .time-btn {
-    padding: 8px 12px;
-    font-size: 13px;
+/*     padding: 8px 12px;
+ */    font-size: 10px;
   }
 }

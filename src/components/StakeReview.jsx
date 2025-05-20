@@ -310,7 +310,7 @@ const StakeholderReviews = () => {
             onClick={handleLoadMore}
             className="load-more-button"
           >
-            Load More Reviews
+             More Reviews
           </button>
         </div>
       )}

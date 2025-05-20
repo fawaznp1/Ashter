@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        &copy; Copyright 2025, All Rights Reserved by Ashter
+        &copy; Copyright 2025, All Rights Reserved by FAWAZ
       </div>
     </footer>
   );

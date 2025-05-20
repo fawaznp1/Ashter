@@ -3,8 +3,8 @@ import dr2 from '../images/dr2.webp'
 import dr3 from '../images/dr26 (7).webp'
 import dr4 from '../images/dr4.webp'
 import dr5 from '../images/dr5.webp'
-import dr6 from '../images/dr18.jpg'
-import dr7 from '../images/dr19.jpg'
+import dr6 from '../images/dr30.png'
+import dr7 from '../images/dr32.png'
 import dr8 from '../images/dr20.jpg'
 import dr9 from '../images/dr26 (1).webp'
 import dr10 from '../images/dr26 (10).webp'
@@ -17,7 +17,7 @@ import dr16 from '../images/dr26 (16).webp'
 import dr17 from '../images/dr26 (17).webp'
 import dr18 from '../images/dr26 (4).webp'
 import dr19 from '../images/dr26 (5).webp'
-import dr20 from '../images/dr26 (6).webp'
+import dr20 from '../images/dr4.webp'
 
 
 
@@ -40,7 +40,7 @@ export const doctorsData = [
     rating: 4.9,
     reviews: 128,
     location: 'Medical Center, Floor 3, Room 302',
-    image: dr1
+    image: dr16
   },
   {
     id: 2,
@@ -87,7 +87,7 @@ export const doctorsData = [
     rating: 4.9,
     reviews: 215,
     location: 'Children\'s Medical Center, Floor 2, Room 220'
-    ,image: dr16
+    ,image: dr1
   },
   {
     id: 5,

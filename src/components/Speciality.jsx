@@ -9,23 +9,23 @@ const specialities = [
   },
   {
     name: 'Gynecologist',
-    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774304.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774299.png',
   },
   {
     name: 'Dermatologist',
-    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774306.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774299.png',
   },
   {
     name: 'Pediatrician',
-    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774309.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774299.png',
   },
   {
     name: 'Neurologist',
-    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774297.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774299.png',
   },
   {
     name: 'Gastroenterologist',
-    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774302.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/3774/3774299.png',
   },
 ];
 

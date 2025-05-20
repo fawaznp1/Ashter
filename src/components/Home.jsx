@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import SpecialitySection from './Speciality';
 import dr3 from '../images/dr26 (1).webp';
@@ -61,7 +62,8 @@ const Home = () => {
             <span>With 100+ Trusted Doctors</span>
           </h1>
          
-          <button className="hero-button">Create Account →</button>
+         
+          <Link to='/login' > <button className="hero-button" >Create Account →</button></Link>
         </div>
         <div className="hero-right">
           <img
