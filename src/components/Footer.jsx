@@ -18,7 +18,7 @@ const Footer = () => {
             <h1 className="logo-text">Ashter</h1>
           </div>
           <p className="footer-description">
-            Ahster Hospital provides compassionate care, advanced technology, and expert medical services to ensure every patient’s health, comfort, and recovery.
+            Ashter Hospital provides compassionate care, advanced technology, and expert medical services to ensure every patient’s health, comfort, and recovery.
 
           </p>
           <div className="social-icons">
@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        &copy; Copyright 2025, All Rights Reserved by FAWAZ
+        &copy; Copyright 2025, All Rights Reserved by  <a href="http://fawaznp.vercel.app" target='_blank' style={{textDecoration:"none"}}>Fawaz</a>
       </div>
     </footer>
   );

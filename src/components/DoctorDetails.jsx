@@ -25,7 +25,7 @@ const DoctorDetails = () => {
       if (doctor.availability.includes('Mon-Fri') && (day === 0 || day === 6)) {
         continue;
       }
-      dates.push({
+      dates.push({ 
         date: date,
         formatted: date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
       });
