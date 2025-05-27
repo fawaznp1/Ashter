@@ -7,6 +7,7 @@ import {
   FaGithub,
 } from 'react-icons/fa';
 
+
 const Footer = () => {
   return (
     <footer className="footer ">
@@ -22,10 +23,18 @@ const Footer = () => {
 
           </p>
           <div className="social-icons">
-            <FaTwitter />
-            <FaFacebookF />
-            <FaInstagram />
-            <FaGithub />
+           <a href='#'>
+             <FaTwitter />
+           </a>
+          <a href='#'>
+              <FaFacebookF />
+          </a>
+          <a href='#'>
+              <FaInstagram />
+          </a>
+           <a href='#'>
+             <FaGithub />
+           </a>
           </div>
         </div>
 
@@ -33,29 +42,28 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-heading">Company</h3>
           <ul>
-            <li>About</li>
-            <li>Features</li> 
-            <li>Works</li>
-            <li >Career</li>
+           
+              <a href='/about' style={{textDecoration:"none" ,color:"black"}}> <li>About</li> </a>
+             <a href='/facilities' style={{textDecoration:"none" ,color:"black"}}> <li>Features</li> </a>
+             <a href='/alldoctors' style={{textDecoration:"none" ,color:"black"}}> <li>All Doctors</li> </a>
+             <a href='/career' style={{textDecoration:"none" ,color:"black"}}> <li>Career</li> </a>
           </ul>
         </div>
 
         {/* Help */}
-        <div className="footer-section">
+        <div className="footer-section" >
           <h3 className="footer-heading">Help</h3>
           <ul>
-            <li>Customer Support</li>
-            <li>Delivery Details</li>
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
+          
+             <a href='/contact' style={{textDecoration:"none" ,color:"black"}}> <li>Customer Support</li> </a>
+             <a href='/blog' style={{textDecoration:"none" ,color:"black"}}> <li>BLOG</li> </a>
+             <a href='/terms' style={{textDecoration:"none" ,color:"black"}}> <li>Terms & Conditions</li> </a>
+             <a href='/privacy' style={{textDecoration:"none" ,color:"black"}}> <li>Privacy Policy</li> </a>
+          
           </ul>
         </div>
 
-       {/*  <div className="footer-section">
-          <h3 className="footer-heading">Subscribe to Newsletter</h3>
-          <input type="email" placeholder="Enter your email" className="footer-input" />
-          <button className="footer-button">Subscribe</button>
-        </div> */}
+       
       </div>
 
       <div className="footer-bottom">

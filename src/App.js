@@ -11,6 +11,12 @@ import TopDoctors from './components/TopDoctors';
 import AllDoctors from './components/AllDoctors';
 import Login from './components/Login';
 import UserDashboard from './components/UserDash';
+import FloatingChatbot from './components/ChatAi';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
+import Careers from './components/Careers';
+import HospitalFacilities from './components/Facility';
+import HospitalBlog from './components/Blog';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -28,6 +34,7 @@ function App() {
   return (
     
     <div className="App">
+      <FloatingChatbot />
       <ScrollToTop />
       <BasicExample />
      <Routes>
@@ -39,6 +46,11 @@ function App() {
       <Route path="/doctor/:id" element={<DoctorDetails />} /> 
       <Route path='/alldoctors' element={<AllDoctors />}></Route>
       <Route path="/dashboard" element={<UserDashboard />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path="/career" element={<Careers />} />
+      <Route path="/facilities" element={<HospitalFacilities />} />
+      <Route path="/blog" element={<HospitalBlog />} />
 
      </Routes>
      <ComponentName />

@@ -26,7 +26,7 @@ import dr21 from '../images/dr45 (13).webp'
 
 
 
-export const doctorsData = [
+export  const doctorsData = [
   {
     id: 1,
     name: 'Dr. Richard James',
