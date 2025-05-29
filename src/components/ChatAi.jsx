@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Bot, User, X, MessageCircle } from 'lucide-react';
 import './ChatAi.css';
-import { doctorsData } from './DoctorData'; // Import from your DoctorData.js
+import { doctorsData } from './DoctorData'; 
 
 const AshterChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,16 +83,16 @@ const AshterChatbot = () => {
     
     // Booking related - check this FIRST before specialty search
     if (lowercaseQuery.includes('book') || lowercaseQuery.includes('appointment') || lowercaseQuery.includes('schedule')) {
-      return `To book an appointment, I can help you find the right doctor first. Here are our available doctors:
+      return `To book an appointment, please login with an Ashter account.However, I can help you find the right doctor first. Here are some of our available doctors:
 
 ${doctorsData.filter(doc => doc.status.toLowerCase() === 'available').slice(0, 5).map(doc => 
   `• ${doc.name} (${doc.specialty}) - ${doc.location} - ${doc.appointmentFee}`
-).join('\n')}
+).join('\n')}...
 
-Please let me know which doctor you'd like to book with, or tell me what type of specialist you need.`;
+...Please let me know which doctor you'd like to book with, or tell me what type of specialist you need.`;
     }
 
-    // Specialty search - Fixed logic for better matching
+    
     const specialtyMappings = {
       'cardiology': 'cardiologist',
       'cardiologist': 'cardiologist',
@@ -166,7 +166,6 @@ Please let me know which doctor you'd like to book with, or tell me what type of
       'digestive': 'gastroenterologist'
     };
 
-    // Find matching specialty - simplified and more reliable logic
     const foundSpecialtyKey = Object.keys(specialtyMappings).find(key => {
       // Check if the query contains the specialty keyword
       return lowercaseQuery.includes(key.toLowerCase());
@@ -320,12 +319,12 @@ What would you like to know about our doctors?`;
 
 ${doctors.map(doc => 
   `👨‍⚕️ **${doc.name}**
-   Specialty: ${doc.specialty}
-   Rating: ${doc.rating}⭐ (${doc.reviews} reviews) 
-   Experience: ${doc.experience}
-   Fee: ${doc.appointmentFee} | Status: ${doc.status}
-   Languages: ${doc.languages.join(', ')}
-   Location: ${doc.location}
+   🏥 Specialty: ${doc.specialty}
+   ⭐ Rating: ${doc.rating}⭐ (${doc.reviews} reviews) 
+   📅 Experience: ${doc.experience}
+   💰 Fee: ${doc.appointmentFee} 
+   🗣️ Languages: ${doc.languages.join(', ')}
+   📍 Location: ${doc.location}
    ${doc.status.toLowerCase() === 'available' ? '✅ Available for booking' : '⏳ Currently busy'}
 `).join('\n')}
 
